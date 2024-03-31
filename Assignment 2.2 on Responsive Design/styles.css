@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+.topbar {
+    padding: 15px ;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 45px;
+}
+
+#cart-item {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.toptext {
+    background-image: url("assets/kw-background.png");
+    background-repeat: no;
+    background-size: cover;
+    color: white;
+    height:450px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 30px;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.flex,
+.flex1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.heading{
+    font-weight: bold;
+    font-size: 35px;
+}
+.product{
+    padding: 10px;
+}
+.books,.games, .crafts{
+    padding: 10px;
+}
+.books > img , .crafts >img, .games >img {
+    height: 200px;
+}
+
+.money {
+    align-items: center;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.addBtn {
+    background-color: #6196ff;
+    border-radius: 10px;
+    padding: 7px;
+    color: white;
+}
+.addBtn img {
+    height: 15px;
+}
+
+h1,h2 {
+    font-weight: bold;
+}
+h4 {
+    color: gray;
+    font-weight: lighter;
+    padding-top: 7px;
+}
+h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+footer img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    padding: 10px;
+}
+footer p {
+    font-size: large;
+    padding: 10px;
+}
+footer div p {
+    display: flex;
+    justify-content:end;
+    font-weight: bolder;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        text-align: center;
+    }
+    .topbar {
+        padding: 15px;
+    }
+
+    .toptext {
+        height: 250px;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .content {
+        padding: 5% 5%;
+    }
+    .content h1 {
+        font-size: 35px;
+    }
+    .section {
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .money {
+        padding: 10px 10px;
+    }
+    
+}
